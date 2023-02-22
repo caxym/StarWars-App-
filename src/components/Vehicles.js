@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { Context } from "../store/context";
 
 const Ship = (props) => {
-    const { store, actions } = useContext(Context);
+    const {actions } = useContext(Context);
     const handleSubmit =()=>{
         actions.addFavorite(props.title);
     };
@@ -39,7 +39,6 @@ const Vehicles = () => {
     } 
     useEffect(() => { 
         getUfo();
-        console.log(ufo);
     }, [])
     return <div className="  row row-cols-1 row-cols-md-5 g-4">
         {ufo.map((ufos) => (

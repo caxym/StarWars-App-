@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { Context } from "../store/context";
 
 const Chars = (props) => {
-    const { store, actions } = useContext(Context);
+    const {actions } = useContext(Context);
     const handleSubmit = () => {
         actions.addFavorite(props.title);
     };
