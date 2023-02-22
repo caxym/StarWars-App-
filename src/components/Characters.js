@@ -9,7 +9,8 @@ const Chars = (props) => {
     const handleSubmit =()=>{
         actions.addFavorite(props.title);
     };
-console.log (store.favorite)
+console.log (store.indice);
+console.log (store.favorite);
     return <div>
         <div className="card text-bg-dark">
             <div className="">

@@ -25,9 +25,9 @@ const Navbar = () => {
                 {store.favorite.length > 0 ? (
                   store.favorite.map((fav, index) => (
                     <ul key={index} className="list-group-item d-flex justify-content-between align-items-center p-1">
-                      <li clasName="dropdown-item-text">{fav}</li>
+                      <li className="dropdown-item-text">{fav}</li>
                       <span>
-                        <button type="button" className="btn btn-outline-danger" onClick={handleDelete}><i class="bi bi-trash"></i></button>
+                        <button type="button" className="btn btn-outline-danger" onClick={handleDelete}><i className="bi bi-trash"></i></button>
                       </span>
 
                     </ul>
