@@ -14,10 +14,10 @@ const getState = ({ setStore, getActions, getStore }) => {
                 }
             },
             delFavorite: (name) => {
+                console.log(name)
                 const { favorite } = getStore();
-                const newFavorites = [...favorite]
-                newFavorites.splice(name,1);
-                setStore({ favorite: newFavorites })
+                const remFav = favorite.filter (favs => favs !== name) ;
+                setStore({ favorite: remFav })
             }
         },
 
